@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - International Graduate School of Ministry (IGSM)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#056619',
+                            secondary: '#E05121',
+                            outline: '#DA251D',
+                            dark: '#033B0E'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .serif-font {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-primary/40 text-white">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center font-bold text-white text-lg shadow-lg ring-2 ring-brand-outline">
+                    I
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-wider block leading-tight serif-font">IGSM</span>
+                    <span class="text-[10px] text-emerald-200/70 tracking-widest uppercase block">Graduate School of
+                        Ministry</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-200">
+                <a href="index.html" class="hover:text-brand-secondary transition">Home</a>
+                <a href="about.html"
+                    class="text-brand-secondary font-semibold border-b-2 border-brand-secondary pb-1">About</a>
+                <a href="programs.html" class="hover:text-brand-secondary transition">Program Offerings</a>
+                <a href="/#contact" class="hover:text-brand-secondary transition">Contact Us</a>
+            </nav>
+
+            <a href="/#contact"
+                class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs uppercase font-semibold tracking-wider text-white bg-brand-secondary hover:bg-brand-secondary/90 rounded-lg transition shadow-md border border-brand-outline">
+                Join Our Service
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- Page Header Banner -->
+        <section class="bg-brand-primary text-white py-16 border-b-4 border-brand-outline relative overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]">
+            </div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+                <span
+                    class="text-amber-200 font-semibold tracking-widest uppercase text-xs bg-brand-dark/50 border border-brand-outline/60 px-4 py-1.5 rounded-full inline-block mb-3">
+                    Who We Are
+                </span>
+                <h1 class="text-3xl sm:text-4xl font-bold serif-font text-white mb-2">About IGSM</h1>
+                <p class="text-emerald-100 text-sm max-w-xl mx-auto">Rooted in Scripture, Reaching the World</p>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Cards -->
+        <section class="py-16 max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Our Mission -->
+                <div
+                    class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm border-t-4 border-t-brand-primary relative flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-primary flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-secondary uppercase tracking-wider block mb-1">Our
+                            Mission</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">To Produce Biblical Servant Leaders</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            IGSM, International Graduate School of Ministry, is to produce servant leaders who are
+                            biblically grounded, spiritually mature, and culturally relevant for both the intracultural
+                            ministry of the evangelical church in the Philippines and its intercultural ministry abroad.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-brand-primary">
+                        <span>Spiritual Maturity & Cultural Relevance</span>
+                    </div>
+                </div>
+
+                <!-- Our Vision -->
+                <div
+                    class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm border-t-4 border-t-brand-secondary relative flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-orange-50 text-brand-secondary flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-secondary uppercase tracking-wider block mb-1">Our
+                            Vision</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4">To Equip Christian Leaders</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            IGSM, International Graduate School of Ministry, is here to equip Christian leaders for the
+                            kingdom ministry of Christ in world mission through being a school of spiritual and academic
+                            excellence.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-brand-secondary">
+                        <span>Rooted in Scripture, Reaching the World</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Administrative Organization / Leadership & Faculty -->
+        <section class="py-16 bg-slate-100/70 border-y border-slate-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-xs font-bold text-brand-secondary uppercase tracking-wider block mb-1">Leadership
+                        & Faculty</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-3">IGSM Administrative Organization</h2>
+                    <div class="w-16 h-1 bg-brand-primary mx-auto rounded-full"></div>
+                </div>
+
+                <!-- Executive Leadership -->
+                <div class="mb-12">
+                    <h3
+                        class="text-sm font-bold uppercase tracking-wider text-brand-dark mb-4 pb-2 border-b-2 border-brand-primary flex items-center gap-2">
+                        <i class="fa-solid fa-user-tie text-brand-secondary"></i> Executive Administration
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                        <div
+                            class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-brand-primary">
+                            <span
+                                class="text-[10px] font-bold text-brand-secondary uppercase block tracking-wider">President</span>
+                            <p class="font-bold text-slate-900 text-sm mt-0.5">Rev. Enoch M. Han, Ph.D</p>
+                        </div>
+
+                        <div
+                            class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-brand-primary">
+                            <span class="text-[10px] font-bold text-brand-secondary uppercase block tracking-wider">Vice
+                                President / Director</span>
+                            <p class="font-bold text-slate-900 text-sm mt-0.5">Rev. James T. Kim, Ed.D(c)</p>
+                        </div>
+
+                        <div
+                            class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-brand-primary">
+                            <span class="text-[10px] font-bold text-brand-secondary uppercase block tracking-wider">Dean
+                                of Student Affairs / Director</span>
+                            <p class="font-bold text-slate-900 text-sm mt-0.5">Dr. Joseph S. Lee, D.Min, Ph.D</p>
+                        </div>
+
+                        <div
+                            class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm border-l-4 border-l-brand-primary">
+                            <span
+                                class="text-[10px] font-bold text-brand-secondary uppercase block tracking-wider">Academic
+                                Dean</span>
+                            <p class="font-bold text-slate-900 text-sm mt-0.5">Rev. Johan Kim, Ph.D</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Department Directors & Faculty -->
+                <div class="mb-12">
+                    <h3
+                        class="text-sm font-bold uppercase tracking-wider text-brand-dark mb-4 pb-2 border-b-2 border-brand-primary flex items-center gap-2">
+                        <i class="fa-solid fa-chalkboard-user text-brand-secondary"></i> IT, Faculty & Branch Directors
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Director, IT
+                                Department</span>
+                            <p class="font-semibold text-slate-800 text-sm">Rev. David Jo</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Associate
+                                Professor</span>
+                            <p class="font-semibold text-slate-800 text-sm">Dr. Juan Manago</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Adjunct Professor</span>
+                            <p class="font-semibold text-slate-800 text-sm">Rev. Won Ki Jeong</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Director, Laguna
+                                Branch</span>
+                            <p class="font-semibold text-slate-800 text-sm">Rev. Moses Lee</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Director, Sri Lanka
+                                Branch</span>
+                            <p class="font-semibold text-slate-800 text-sm">Rev. David Bae</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Director, Isabela
+                                Branch</span>
+                            <p class="font-semibold text-slate-800 text-sm">Rev. Suk Rae Koh</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Acting Director, Tarlac
+                                Branch / Teaching Staff</span>
+                            <p class="font-semibold text-slate-800 text-sm">Rev. Rumel Caballero</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Campus Management
+                                Coordinator / Teaching Staff</span>
+                            <p class="font-semibold text-slate-800 text-sm">Ptr. Edwin Mollasgo</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block">Class Coordinator /
+                                Teaching Staff</span>
+                            <p class="font-semibold text-slate-800 text-sm">Ptr. Alejo P. Lisboa</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Administrative Staff & Coordinators -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <!-- Officers & Coordinators -->
+                    <div>
+                        <h3
+                            class="text-sm font-bold uppercase tracking-wider text-brand-dark mb-4 pb-2 border-b-2 border-brand-primary flex items-center gap-2">
+                            <i class="fa-solid fa-sitemap text-brand-secondary"></i> Key Officers & Area Coordinators
+                        </h3>
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Assistant Treasurer</span>
+                                <span class="font-semibold text-slate-800">Rev. Deng Rapacon</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Secretary General</span>
+                                <span class="font-semibold text-slate-800">Rev. Chat Morelos</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Area Coordinator</span>
+                                <span class="font-semibold text-slate-800">Rev. Danilo Tangtang</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Area Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptra. Emma Trinidad</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Area Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptr. Mario Mina</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Area Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptr. Francis Sigua</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Class Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptra. Emilia T. Palomares</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Class Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptr. Steve Javier</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Class Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptra. Rhodora Benipayo</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1 border-b border-slate-100">
+                                <span class="text-slate-500 text-xs">Forum Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptr. Diogenes Igharas</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm py-1">
+                                <span class="text-slate-500 text-xs">Forum Coordinator</span>
+                                <span class="font-semibold text-slate-800">Ptr. Manny Canoy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Staff & Key Personnel -->
+                    <div>
+                        <h3
+                            class="text-sm font-bold uppercase tracking-wider text-brand-dark mb-4 pb-2 border-b-2 border-brand-primary flex items-center gap-2">
+                            <i class="fa-solid fa-users text-brand-secondary"></i> Staff & Ministry Partners
+                        </h3>
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium text-slate-700">
+                                <li class="p-3 bg-slate-50 rounded-lg border border-slate-100 flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-xs text-brand-primary"></i> Ptr. Ludovico Pineda
+                                </li>
+                                <li class="p-3 bg-slate-50 rounded-lg border border-slate-100 flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-xs text-brand-primary"></i> Ptr. Ramil Añoso
+                                </li>
+                                <li class="p-3 bg-slate-50 rounded-lg border border-slate-100 flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-xs text-brand-primary"></i> Ptr. Eric De Guzman
+                                </li>
+                                <li class="p-3 bg-slate-50 rounded-lg border border-slate-100 flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-xs text-brand-primary"></i> Ptr. Jose Antivola
+                                </li>
+                                <li class="p-3 bg-slate-50 rounded-lg border border-slate-100 flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-xs text-brand-primary"></i> Ptr. Alvin Benipayo
+                                </li>
+                                <li class="p-3 bg-slate-50 rounded-lg border border-slate-100 flex items-center gap-2">
+                                    <i class="fa-solid fa-user text-xs text-brand-primary"></i> Ptr. Orlando Paldeng
+                                </li>
+                                <li
+                                    class="p-3 bg-slate-50 rounded-lg border border-slate-100 flex items-center gap-2 sm:col-span-2">
+                                    <i class="fa-solid fa-user text-xs text-brand-primary"></i> Ptr. Richard Nicio
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Institutional Affiliations -->
+        <section class="py-16 max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-secondary uppercase tracking-wider block mb-1">Accreditation &
+                    Partners</span>
+                <h2 class="text-2xl font-bold text-slate-900">Institutional Affiliations</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div
+                    class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:border-brand-outline transition">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center mx-auto mb-4 font-bold">
+                        AETA
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm mb-1">AETA</h3>
+                    <p class="text-xs text-slate-500">Association of Educators and Trainers in All-Tribes</p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:border-brand-outline transition">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-secondary/10 text-brand-secondary flex items-center justify-center mx-auto mb-4 font-bold">
+                        PABATS
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm mb-1">PABATS</h3>
+                            
+                    <p class="text-xs text-slate-500">Philippine Association of Bible and Theological Schools</p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:border-brand-outline transition">
+                    <div
+                        class="w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center mx-auto mb-4 font-bold">
+                        ATSM
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm mb-1">ATSM</h3>
+                    <p class="text-xs text-slate-500">Association of Theological Studies and Ministries</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="py-16 bg-brand-dark text-white border-t-4 border-brand-outline">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4">Connect With Our Team</h2>
+                <p class="text-emerald-100 text-sm max-w-xl mx-auto mb-8">
+                    Have questions about our leadership, branches, or admissions? Reach out to our campus administrative
+                    office today.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-xs text-emerald-200 mb-8">
+                    <a href="tel:+639186428841" class="flex items-center gap-2 hover:text-white transition"><i
+                            class="fa-solid fa-phone text-brand-secondary"></i> (+63) 918 642 8841</a>
+                    <a href="mailto:igsm.phil@gmail.com" class="flex items-center gap-2 hover:text-white transition"><i
+                            class="fa-solid fa-envelope text-brand-secondary"></i> igsm.phil@gmail.com</a>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-secondary"></i>
+                        Cainta, Rizal</span>
+                </div>
+                <a href="/#contact"
+                    class="inline-block px-8 py-3 bg-brand-secondary hover:bg-brand-secondary/90 text-white font-bold rounded-lg transition shadow-md border border-brand-outline text-xs uppercase tracking-wider">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-emerald-100/70 text-xs py-12 border-t border-brand-primary/40">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-8 h-8 rounded-full bg-brand-secondary flex items-center justify-center font-bold text-white shadow-sm border border-brand-outline">
+                    I</div>
+                <span class="font-bold text-white text-sm">International Graduate School of Ministry</span>
+            </div>
+            <p>&copy; 2022 International Graduate School of Ministry. All rights reserved.</p>
+            <div class="flex gap-4 text-base">
+                <a href="https://facebook.com/igsm.phils" target="_blank" class="hover:text-brand-secondary transition"
+                    aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

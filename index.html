@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - International Graduate School of Ministry (IGSM)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#056619',
+                            secondary: '#E05121',
+                            outline: '#DA251D',
+                            dark: '#033B0E'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .serif-font {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-primary/40 text-white">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center font-bold text-white text-lg shadow-lg ring-2 ring-brand-outline">
+                    I
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-wider block leading-tight serif-font">IGSM</span>
+                    <span class="text-[10px] text-emerald-200/70 tracking-widest uppercase block">Graduate School of
+                        Ministry</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-200">
+                <a href="index.html"
+                    class="text-brand-secondary font-semibold border-b-2 border-brand-secondary pb-1">Home</a>
+                <a href="about.html" class="hover:text-brand-secondary transition">About</a>
+                <a href="programs.html" class="hover:text-brand-secondary transition">Program Offerings</a>
+                <a href="/#contact" class="hover:text-brand-secondary transition">Contact Us</a>
+            </nav>
+
+            <a href="#contact"
+                class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs uppercase font-semibold tracking-wider text-white bg-brand-secondary hover:bg-brand-secondary/90 rounded-lg transition shadow-md border border-brand-outline">
+                Join Our Service
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section
+            class="relative bg-brand-primary text-white py-20 md:py-28 overflow-hidden border-b-4 border-brand-outline">
+            <div
+                class="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]">
+            </div>
+            <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+                <span
+                    class="text-amber-200 font-semibold tracking-widest uppercase text-xs bg-brand-dark/50 border border-brand-outline/60 px-4 py-1.5 rounded-full inline-block mb-4 shadow-sm">
+                    Equipping Christian Leaders
+                </span>
+                <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
+                    For the Kingdom Ministry of the Lord in World Mission
+                </h1>
+                <p class="text-emerald-100 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed mb-8">
+                    Offering a quality spiritual and academic program committed to developing faithful and competent
+                    church leaders in the Philippines and abroad.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="programs.html"
+                        class="w-full sm:w-auto px-8 py-3.5 bg-brand-secondary hover:bg-brand-secondary/90 text-white font-bold rounded-xl transition shadow-lg border border-brand-outline text-sm">
+                        View All Programs
+                    </a>
+                    <a href="#contact"
+                        class="w-full sm:w-auto px-8 py-3.5 bg-brand-dark/80 hover:bg-brand-dark text-white font-medium rounded-xl transition border border-white/20 text-sm">
+                        Join Our Service
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcement Bar -->
+        <section class="bg-brand-dark text-white border-b border-brand-outline/40 py-4 px-6">
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+                <div class="flex items-center gap-3">
+                    <span
+                        class="px-2.5 py-1 bg-brand-secondary text-white font-bold text-[10px] uppercase rounded-md tracking-wider border border-brand-outline flex-shrink-0">
+                        Announcement
+                    </span>
+                    <p class="text-xs sm:text-sm text-emerald-100">
+                        A new class of <strong>M.Min & DIM</strong> will start with <strong>Dr. Han</strong> from the
+                        1st Thursday of JULY (which may be his last class). Please sign up with Winnie. Bless all!
+                    </p>
+                </div>
+                <a href="#contact"
+                    class="text-xs font-bold text-amber-200 hover:text-white underline whitespace-nowrap">Sign Up Now
+                    &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Program Offerings Quick Grid -->
+        <section class="py-20 max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-3">Academic Programs</h2>
+                <div class="w-16 h-1 bg-brand-secondary mx-auto mb-4 rounded-full"></div>
+                <p class="text-slate-600 text-sm">Comprehensive theological and practical preparation for world mission
+                    and church leadership.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Doctor of Ministry -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition flex flex-col justify-between group">
+                    <div>
+                        <span
+                            class="px-3 py-1 bg-brand-primary/10 text-brand-primary font-bold text-[10px] uppercase rounded-full tracking-wider mb-4 inline-block">Doctorate</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-primary transition">
+                            Doctor Of Ministry</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Advanced practical ministry leadership and applied theological research degree.
+                        </p>
+                    </div>
+                    <a href="programs.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-secondary hover:text-brand-primary transition">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Master of Ministry -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition flex flex-col justify-between group">
+                    <div>
+                        <span
+                            class="px-3 py-1 bg-brand-primary/10 text-brand-primary font-bold text-[10px] uppercase rounded-full tracking-wider mb-4 inline-block">Master's</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-primary transition">
+                            Master Of Ministry</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Graduate degree enhancing ministry skills and theological knowledge.
+                        </p>
+                    </div>
+                    <a href="programs.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-secondary hover:text-brand-primary transition">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Diploma / Cert in Int'l Ministry -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition flex flex-col justify-between group">
+                    <div>
+                        <span
+                            class="px-3 py-1 bg-slate-100 text-slate-700 font-bold text-[10px] uppercase rounded-full tracking-wider mb-4 inline-block">Diploma
+                            / Cert</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-primary transition">
+                            Diploma/Certificate in Int'l Ministry</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Foundational course focused on spiritual growth and mentoring others.
+                        </p>
+                    </div>
+                    <a href="programs.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-secondary hover:text-brand-primary transition">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Certificate of Disc. Ministry -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition flex flex-col justify-between group">
+                    <div>
+                        <span
+                            class="px-3 py-1 bg-slate-100 text-slate-700 font-bold text-[10px] uppercase rounded-full tracking-wider mb-4 inline-block">Certificate</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-primary transition">
+                            Certificate of Disc. Ministry</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Training for effective cross-cultural and global mission ministry.
+                        </p>
+                    </div>
+                    <a href="programs.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-secondary hover:text-brand-primary transition">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Basic/Advanced Study in Theology -->
+                <div
+                    class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition flex flex-col justify-between group lg:col-span-2">
+                    <div>
+                        <span
+                            class="px-3 py-1 bg-slate-100 text-slate-700 font-bold text-[10px] uppercase rounded-full tracking-wider mb-4 inline-block">Study
+                            Track</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-primary transition">
+                            Basic/Advanced Study in Theology</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Theological education for foundational or advanced ministry preparation.
+                        </p>
+                    </div>
+                    <a href="programs.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-secondary hover:text-brand-primary transition">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- President's Message -->
+        <section class="py-20 bg-emerald-50/60 border-y border-slate-200">
+            <div class="max-w-5xl mx-auto px-6">
+                <div
+                    class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm border-t-4 border-t-brand-primary relative">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-primary flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">President's Message</h2>
+
+                    <div class="text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
+                        <p>
+                            It is with great pleasure that we welcome you to IGSM, International Graduate School of
+                            Ministry. IGSM is committed to excellence in leadership training and education for the
+                            evangelical churches both at home and abroad. Its primary role in the field of training and
+                            education is to offer a quality spiritual and academic program in the context of commitment
+                            to ministerial and spiritual values.
+                        </p>
+                        <p>
+                            To this end, its curriculum is geared to the development of the faithful and competent
+                            church leader in each of its students. And we believe that such a curriculum will give each
+                            student the necessary foundation on which to build Christ’s church for His kingdom here in
+                            the Philippines and abroad.
+                        </p>
+                        <p class="italic text-slate-800 font-medium">
+                            We are glad and grateful for the opportunities offered here at IGSM, and hope and pray that
+                            each of our students, staff, and faculty members be richly blessed for the sake of His glory
+                            at our school.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs uppercase font-bold text-brand-primary tracking-wider">Leadership &
+                            Vision</span>
+                        <span class="text-xs text-slate-400 font-semibold">International Graduate School of
+                            Ministry</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Assistance & Scripture -->
+        <section class="py-20 max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+
+                <!-- Left Column: Academic Info -->
+                <div class="lg:col-span-2 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold text-brand-secondary uppercase tracking-wider block mb-1">Student
+                            Assistance</span>
+                        <h2 class="text-3xl font-bold text-slate-900 mb-3">Academic Information</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Key academic tools and planning resources every student needs. From scholarships to course
+                            guides and school calendars, access everything vital to your educational journey in one
+                            place.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        <a href="programs.html#scholarships"
+                            class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition group">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-emerald-50 text-brand-primary flex items-center justify-center text-base mb-4 group-hover:bg-brand-primary group-hover:text-white transition">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 mb-2 group-hover:text-brand-primary transition">
+                                Scholarship</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Discover financial aid options to support your studies and reduce the cost of your
+                                education.
+                            </p>
+                        </a>
+
+                        <div
+                            class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition group">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-emerald-50 text-brand-primary flex items-center justify-center text-base mb-4 group-hover:bg-brand-primary group-hover:text-white transition">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 mb-2 group-hover:text-brand-primary transition">School
+                                Calendar</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Check important dates, holidays, and deadlines to stay organized throughout the academic
+                                year.
+                            </p>
+                        </div>
+
+                        <a href="programs.html#curriculum"
+                            class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition group">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-emerald-50 text-brand-primary flex items-center justify-center text-base mb-4 group-hover:bg-brand-primary group-hover:text-white transition">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 mb-2 group-hover:text-brand-primary transition">Required
+                                Courses</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                View essential subjects needed to complete your program and meet graduation
+                                requirements.
+                            </p>
+                        </a>
+
+                        <a href="programs.html#curriculum"
+                            class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-brand-outline transition group">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-emerald-50 text-brand-primary flex items-center justify-center text-base mb-4 group-hover:bg-brand-primary group-hover:text-white transition">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 mb-2 group-hover:text-brand-primary transition">Elective
+                                Courses</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Choose additional subjects that match your interests and broaden your academic
+                                experience.
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Right Column: Scripture Spotlight -->
+                <div
+                    class="bg-brand-dark text-white p-8 sm:p-10 rounded-3xl border-4 border-brand-outline relative overflow-hidden flex flex-col justify-between h-full min-h-[380px]">
+                    <div
+                        class="absolute -right-10 -bottom-10 text-emerald-900/30 text-9xl font-serif pointer-events-none">
+                        <i class="fa-solid fa-bible"></i>
+                    </div>
+
+                    <div class="relative z-10">
+                        <span
+                            class="text-amber-200 text-[10px] uppercase tracking-widest font-bold bg-brand-primary/60 border border-brand-outline/40 px-3 py-1 rounded-full inline-block mb-6">
+                            Scripture Focus
+                        </span>
+                        <blockquote class="text-emerald-100 text-lg leading-relaxed italic font-serif mb-6">
+                            “Better is one day in your courts than a thousand elsewhere; I would rather be a doorkeeper
+                            in the house of my God than dwell in the tents of the wicked.”
+                        </blockquote>
+                    </div>
+
+                    <div class="relative z-10 pt-4 border-t border-brand-primary/60">
+                        <span class="text-brand-secondary font-bold text-sm tracking-wider uppercase block">Psalm
+                            84:10</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Join Our Service Form -->
+        <section id="contact" class="py-20 bg-slate-900 text-white border-t-4 border-brand-outline">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-3">Join Our Service</h2>
+                    <p class="text-slate-400 text-sm">Send us a message or inquiry to get connected with our campus
+                        ministry.</p>
+                </div>
+
+                <form action="#" method="POST"
+                    class="bg-slate-800/80 p-8 sm:p-10 rounded-2xl border border-slate-700/80 shadow-lg space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name"
+                                class="block text-xs uppercase font-semibold text-slate-300 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-secondary transition">
+                        </div>
+                        <div>
+                            <label for="email"
+                                class="block text-xs uppercase font-semibold text-slate-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-secondary transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message"
+                            class="block text-xs uppercase font-semibold text-slate-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="How can we help you?"
+                            class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-secondary transition"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full sm:w-auto px-8 py-3.5 bg-brand-secondary hover:bg-brand-secondary/90 text-white font-bold rounded-lg transition shadow-md border border-brand-outline text-sm">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-emerald-100/70 text-xs py-12 border-t-4 border-brand-outline">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-8 h-8 rounded-full bg-brand-secondary flex items-center justify-center font-bold text-white shadow-sm border border-brand-outline">
+                    I</div>
+                <span class="font-bold text-white text-sm">International Graduate School of Ministry</span>
+            </div>
+            <p>&copy; 2022 International Graduate School of Ministry. All rights reserved.</p>
+            <div class="flex gap-4 text-base">
+                <a href="https://facebook.com/igsm.phils" target="_blank" class="hover:text-brand-secondary transition"
+                    aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
