@@ -1292,6 +1292,17 @@ strong {
     color: var(--orange);
 }
 
+.footer-verse {
+    font-size: 0.75rem;
+    line-height: 1.625;
+}
+
+.footer-verse figcaption {
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
 .footer-contact {
     display: flex;
     flex-direction: column;
