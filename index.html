@@ -21,7 +21,6 @@
             <nav class="main-nav">
                 <a href="index.html" class="is-active">Home</a>
                 <a href="programs.html">Program Offerings</a>
-                <a href="index.html#admission">Admission</a>
                 <a href="calendar.html">School Calendar</a>
                 <a href="about.html">About Us</a>
                 <a href="alumni.html">IGSM Alumni</a>
@@ -33,9 +32,9 @@
                     class="header-social">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="index.html#contact" class="header-cta">Join Our Service</a>
-                <button id="menu-toggle" type="button" class="menu-toggle" aria-label="Open menu"
-                    aria-expanded="false" aria-controls="mobile-menu">
+                <a href="index.html#contact" class="header-cta"> Get in Touch</a>
+                <button id="menu-toggle" type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -51,7 +50,7 @@
                 <a href="about.html">About Us</a>
                 <a href="alumni.html">IGSM Alumni</a>
                 <a href="index.html#announcement">Announcement</a>
-                <a href="index.html#contact" class="mobile-menu__cta">Join Our Service</a>
+                <a href="index.html#contact" class="mobile-menu__cta">Get in Touch</a>
             </div>
         </nav>
     </header>
@@ -65,7 +64,7 @@
             <div class="hero__glow hero__glow--orange"></div>
 
             <div class="container container--md hero__content layer-top">
-                <span class="badge">International Graduate School of Ministry</span>
+                <span class="home-badge">International Graduate School of Ministry</span>
                 <h1>Equipping Christian Leaders</h1>
                 <p class="hero__subtitle">For the Kingdom Ministry of the Lord in World Mission</p>
                 <p class="hero__text">
@@ -102,10 +101,11 @@
                 <!-- Portrait -->
                 <div class="president__portrait">
                     <div class="president__frame">
-                        <!-- Replace the icon with the president's photo, e.g.
-                             <img src="assets/president.jpg" alt="Rev. Enoch M. Han, Ph.D."> -->
+                        <!-- Replace the icon with the president's photo, e.g. -->
+
                         <div class="president__photo">
-                            <i class="fa-solid fa-user-tie"></i>
+                            <img src="assets/Dr. Rev. Enoch.png" alt="Rev. Enoch M. Han, Ph.D.">
+                            <!-- <i class="fa-solid fa-user-tie"></i> -->
                         </div>
                         <div class="president__name">
                             <strong>Rev. Enoch M. Han, Ph.D.</strong>
@@ -327,33 +327,36 @@
                     <div class="divider"></div>
                 </div>
 
-                <div class="grid grid--gap-md grid--md-2">
+                <div class="announcement-list">
                     <article class="announcement">
-                        <div class="announcement__head">
-                            <span class="icon-tile"><i class="fa-solid fa-chalkboard-user"></i></span>
-                            <span class="announcement__label">New Class</span>
+                        <div class="announcement__content">
+                            <div class="announcement__main">
+                                <span class="announcement__label">1st Biblical Leadership Conference</span>
+                                <h3>Under Christ's Authority, Go and Make Disciples</h3>
+                                <p class="announcement__theme">Matthew 28:18-30</p>
+                            </div>
+                            <div class="announcement__details">
+                                <p class="announcement__detail">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                    <span><strong>November 23, 2026</strong><br>Monday, 9:00 AM-5:00 PM</span>
+                                </p>
+                                <p class="announcement__detail">
+                                    <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+                                    <span>For alumni<br>(Main/Full Course Graduates)</span>
+                                </p>
+                                <p class="announcement__detail announcement__detail--fee">
+                                    <i class="fa-solid fa-ticket" aria-hidden="true"></i>
+                                    <span>Registration fee <strong>P100</strong></span>
+                                </p>
+                            </div>
                         </div>
-                        <h3>M.Min &amp; DIM with Dr. Han</h3>
-                        <p>
-                            A new class of <strong>M.Min &amp; DIM</strong> will start with
-                            <strong>Dr. Han</strong> from the 1st Thursday of JULY (which may be his last class).
-                            Please sign up with Winnie. Bless all!
-                        </p>
-                        <a href="#contact" class="announcement__link">Sign Up Now &rarr;</a>
+                        <div class="announcement__contact">
+                            <strong>For inquiries</strong>
+                            <p>Sis. Winnie (+63 918 642 8841), Sis. Menchu (+63 981 025 4328), and Sis. Erlyn (+63 976 461 1925)</p>
+                        </div>
                     </article>
 
-                    <article class="announcement">
-                        <div class="announcement__head">
-                            <span class="icon-tile icon-tile--green"><i class="fa-solid fa-people-group"></i></span>
-                            <span class="announcement__label">IGSM Main Forum</span>
-                        </div>
-                        <h3>Every 1st Monday &middot; 9 AM – 12 NN</h3>
-                        <p>The IGSM Main Forum is held every first Monday of the month at the IGSM Building.</p>
-                        <p class="announcement__place">
-                            <i class="fa-solid fa-location-dot"></i>
-                            #1 St. John St. Brookside Hills Subd., Cainta, Rizal
-                        </p>
-                    </article>
+
                 </div>
             </div>
         </section>
@@ -363,12 +366,18 @@
             <div id="contact" class="container container--sm">
                 <div class="section-head">
                     <span class="eyebrow">Admission &amp; Inquiries</span>
-                    <h2 class="section-title">Join Our Service</h2>
-                    <p class="section-lead">Send us a message or inquiry about admission, or to get connected with our
-                        campus ministry.</p>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-lead">Contact us with any questions about admission, programs, or student life.
+                    </p>
                 </div>
 
-                <form action="#" method="POST" class="form-card">
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                    class="form-card">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="hidden" name="subject" value="IGSM Website Inquiry">
+                    <p hidden>
+                        <label>Leave this field empty: <input name="bot-field"></label>
+                    </p>
                     <div class="form-row">
                         <div>
                             <label for="name" class="form-label">Name</label>
@@ -410,7 +419,6 @@
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="programs.html">Program Offerings</a></li>
-                    <li><a href="index.html#admission">Admission</a></li>
                     <li><a href="calendar.html">School Calendar</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="alumni.html">IGSM Alumni</a></li>
@@ -424,11 +432,14 @@
                     <li><i class="fa-solid fa-location-dot"></i>
                         #1 St. John Street, Brookside Hills Subd., Cainta, Rizal, 1900</li>
                     <li><i class="fa-solid fa-phone"></i>
-                        <a href="tel:+639186428841">(+63) 918 642 8841</a></li>
+                        <a href="tel:+639186428841">(+63) 918 642 8841</a>
+                    </li>
                     <li><i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:igsm.phil@gmail.com">igsm.phil@gmail.com</a></li>
+                        <a href="mailto:igsm.phil@gmail.com">igsm.phil@gmail.com</a>
+                    </li>
                     <li><i class="fa-brands fa-facebook"></i>
-                        <a href="https://facebook.com/igsm.phils" target="_blank" rel="noopener">facebook.com/igsm.phils</a>
+                        <a href="https://facebook.com/igsm.phils" target="_blank"
+                            rel="noopener">facebook.com/igsm.phils</a>
                     </li>
                 </ul>
             </div>

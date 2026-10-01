@@ -1,28 +1,3 @@
-/* ==========================================================================
-   IGSM stylesheet — every style for the site lives in this one file.
-
-   Contents
-     1. Fonts & design tokens
-     2. Reset & base
-     3. Layout helpers (container, section, grids)
-     4. Shared components (badges, tags, buttons, cards, icon tiles, lists)
-     5. Header & navigation
-     6. Page banner
-     7. Footer
-     8. Forms
-     9. Home page
-    10. About page
-    11. Programs page
-    12. School Calendar page
-    13. Alumni page & gallery
-
-   Breakpoints: 640px (sm), 768px (md), 1024px (lg), 1280px (xl)
-   ========================================================================== */
-
-
-/* 1. Fonts & design tokens
-   ========================================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -73,9 +48,6 @@
     --ease: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-/* 2. Reset & base
-   ========================================================================== */
 
 *,
 *::before,
@@ -158,9 +130,6 @@ strong {
     display: none !important;
 }
 
-
-/* 3. Layout helpers
-   ========================================================================== */
 
 .container {
     width: 100%;
@@ -255,7 +224,6 @@ strong {
     }
 }
 
-/* Rows that center an incomplete last row (e.g. 13 cards in rows of 4) */
 .center-rows {
     display: flex;
     flex-wrap: wrap;
@@ -301,11 +269,6 @@ strong {
     }
 }
 
-
-/* 4. Shared components
-   ========================================================================== */
-
-/* --- Decorative backgrounds --- */
 
 .dots {
     position: absolute;
@@ -445,6 +408,21 @@ strong {
 /* --- Badges & tags --- */
 
 /* Light pill used above headings */
+.home-badge {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.375rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: var(--emerald-50);
+    border: 1px solid rgba(5, 102, 25, 0.2);
+    border-radius: 9999px;
+    box-shadow: var(--shadow-sm);
+}
+
 .badge {
     display: inline-block;
     margin-bottom: 1rem;
@@ -1198,9 +1176,6 @@ strong {
 }
 
 
-/* 6. Page banner (top of inner pages)
-   ========================================================================== */
-
 .page-banner {
     position: relative;
     overflow: hidden;
@@ -1253,9 +1228,6 @@ strong {
     font-style: italic;
 }
 
-
-/* 7. Footer
-   ========================================================================== */
 
 .site-footer {
     font-size: 0.875rem;
@@ -1360,9 +1332,6 @@ strong {
 }
 
 
-/* 8. Forms
-   ========================================================================== */
-
 .form-card {
     display: flex;
     flex-direction: column;
@@ -1443,11 +1412,6 @@ textarea.form-input {
     }
 }
 
-
-/* 9. Home page
-   ========================================================================== */
-
-/* --- Hero --- */
 
 .hero {
     position: relative;
@@ -1889,6 +1853,11 @@ textarea.form-input {
 
 /* --- Announcements --- */
 
+.announcement-list {
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
 .announcement {
     padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
@@ -1896,13 +1865,6 @@ textarea.form-input {
     border-radius: 1rem;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-}
-
-.announcement__head {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
 }
 
 .announcement__head .icon-tile {
@@ -1917,27 +1879,96 @@ textarea.form-input {
 }
 
 .announcement__label {
-    font-size: 0.625rem;
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--amber-200);
 }
 
-.announcement h3 {
-    margin-bottom: 0.75rem;
-    font-size: 1.25rem;
+.announcement__content {
+    display: grid;
+    gap: 1.75rem;
 }
 
-.announcement p {
-    margin-bottom: 1.5rem;
+.announcement__main {
+    align-self: center;
+}
+
+.announcement h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+    line-height: 1.3;
+}
+
+.announcement__theme {
+    margin-bottom: 0;
+    font-family: var(--font-quote);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--emerald-200);
+}
+
+.announcement__details {
+    display: grid;
+    gap: 1rem;
+    align-content: center;
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.75rem;
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.announcement__detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0;
     font-size: 0.875rem;
     line-height: 1.625;
     color: var(--emerald-100);
 }
 
-.announcement p strong {
+.announcement__detail i {
+    width: 1rem;
+    margin-top: 0.25rem;
+    color: var(--orange-500);
+    text-align: center;
+}
+
+.announcement__detail strong {
     color: #fff;
+}
+
+.announcement__detail--fee {
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.announcement__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--emerald-100);
+}
+
+.announcement__contact > strong {
+    color: var(--amber-200);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.announcement__contact p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    line-height: 1.625;
+    overflow-wrap: anywhere;
 }
 
 .announcement__link {
@@ -1973,13 +2004,25 @@ textarea.form-input {
     color: #fff;
 }
 
+@media (min-width: 768px) {
+    .announcement {
+        padding: 2.5rem;
+    }
+
+    .announcement__content {
+        grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 0.75fr);
+        align-items: stretch;
+        gap: 2.5rem;
+    }
+
+    .announcement__contact {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1rem;
+    }
+}
 
 
-
-/* 10. About page
-   ========================================================================== */
-
-/* Eyebrow sitting tight above its heading */
 .about-eyebrow {
     margin-bottom: 0.25rem;
     line-height: 1rem;
@@ -2153,11 +2196,6 @@ textarea.form-input {
     color: var(--slate-500);
 }
 
-
-/* 11. Programs page
-   ========================================================================== */
-
-/* --- Hero banner --- */
 
 .prog-banner .badge {
     margin-bottom: 1rem;
