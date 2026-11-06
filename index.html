@@ -329,25 +329,37 @@
 
                 <div class="announcement-list">
                     <article class="announcement">
-                        <div class="announcement__content">
-                            <div class="announcement__main">
-                                <span class="announcement__label">1st Biblical Leadership Conference</span>
-                                <h3>Under Christ's Authority, Go and Make Disciples</h3>
-                                <p class="announcement__theme">Matthew 28:18-30</p>
-                            </div>
-                            <div class="announcement__details">
-                                <p class="announcement__detail">
-                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
-                                    <span><strong>November 23, 2026</strong><br>Monday, 9:00 AM-5:00 PM</span>
-                                </p>
-                                <p class="announcement__detail">
-                                    <i class="fa-solid fa-user-group" aria-hidden="true"></i>
-                                    <span>For alumni<br>(Main/Full Course Graduates)</span>
-                                </p>
-                                <p class="announcement__detail announcement__detail--fee">
-                                    <i class="fa-solid fa-ticket" aria-hidden="true"></i>
-                                    <span>Registration fee <strong>P100</strong></span>
-                                </p>
+                        <div class="announcement__body">
+                            <button type="button" class="announcement__poster"
+                                data-poster-src="assets/announcements/biblical-leadership-conference-2026.jpg"
+                                data-poster-alt="1st Biblical Leadership Conference poster"
+                                aria-label="View the full conference poster">
+                                <img src="assets/announcements/biblical-leadership-conference-2026.jpg"
+                                    alt="1st Biblical Leadership Conference poster" loading="lazy" width="1536" height="2048">
+                                <span class="announcement__zoom" aria-hidden="true">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View poster
+                                </span>
+                            </button>
+                            <div class="announcement__content">
+                                <div class="announcement__main">
+                                    <span class="announcement__label">1st Biblical Leadership Conference</span>
+                                    <h3>Under Christ's Authority, Go and Make Disciples</h3>
+                                    <p class="announcement__theme">Matthew 28:18-20</p>
+                                </div>
+                                <div class="announcement__details">
+                                    <p class="announcement__detail">
+                                        <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                        <span><strong>November 23, 2026</strong><br>Monday, 9:00 AM-5:00 PM</span>
+                                    </p>
+                                    <p class="announcement__detail">
+                                        <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+                                        <span>For alumni<br>(Main/Full Course Graduates)</span>
+                                    </p>
+                                    <p class="announcement__detail announcement__detail--fee">
+                                        <i class="fa-solid fa-ticket" aria-hidden="true"></i>
+                                        <span>Registration fee <strong>P100</strong></span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="announcement__contact">
@@ -443,6 +455,12 @@
                 rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Poster lightbox -->
+    <div id="poster-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Announcement poster">
+        <button id="poster-lightbox-close" type="button" class="lightbox__btn lightbox__btn--close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <img id="poster-lightbox-img" src="" alt="" class="lightbox__img lightbox__img--poster">
+    </div>
 
     <script src="assets/main.js"></script>
 </body>

@@ -26,6 +26,37 @@ document.addEventListener('DOMContentLoaded', function () {
         el.textContent = new Date().getFullYear();
     });
 
+    // Poster lightbox: any [data-poster-src] button opens its image full size.
+    var posterBox = document.getElementById('poster-lightbox');
+    var posterImg = document.getElementById('poster-lightbox-img');
+    var posterTrigger = null;
+
+    if (posterBox && posterImg) {
+        var closePoster = function () {
+            posterBox.classList.remove('is-open');
+            document.body.style.overflow = '';
+            if (posterTrigger) posterTrigger.focus();
+        };
+
+        document.querySelectorAll('[data-poster-src]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                posterTrigger = btn;
+                posterImg.src = btn.getAttribute('data-poster-src');
+                posterImg.alt = btn.getAttribute('data-poster-alt') || '';
+                posterBox.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+                document.getElementById('poster-lightbox-close').focus();
+            });
+        });
+
+        posterBox.addEventListener('click', function (e) {
+            if (e.target === posterBox || e.target.closest('#poster-lightbox-close')) closePoster();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && posterBox.classList.contains('is-open')) closePoster();
+        });
+    }
+
     var header = document.getElementById('site-header');
     if (header) {
         var onScroll = function () {

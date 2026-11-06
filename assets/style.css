@@ -1899,6 +1899,59 @@ textarea.form-input {
     color: var(--amber-200);
 }
 
+.announcement__body {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.announcement__poster {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 15rem;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    cursor: zoom-in;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-2xl);
+}
+
+.announcement__poster img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 300ms ease;
+}
+
+.announcement__zoom {
+    position: absolute;
+    inset: auto 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+}
+
+.announcement__poster:hover img,
+.announcement__poster:focus-visible img {
+    transform: scale(1.04);
+}
+
+.announcement__poster:focus-visible {
+    outline: 2px solid var(--amber-200);
+    outline-offset: 3px;
+}
+
 .announcement__content {
     display: grid;
     gap: 1.75rem;
@@ -2020,10 +2073,26 @@ textarea.form-input {
         padding: 2.5rem;
     }
 
-    .announcement__content {
-        grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 0.75fr);
+    .announcement__body {
+        grid-template-columns: 16rem minmax(0, 1fr);
         align-items: stretch;
         gap: 2.5rem;
+    }
+
+    /* Poster fills the full height of the text column beside it. */
+    .announcement__poster {
+        max-width: none;
+        height: 100%;
+    }
+
+    .announcement__poster img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .announcement__content {
+        gap: 1.5rem;
     }
 
     .announcement__contact {
@@ -3091,6 +3160,11 @@ textarea.form-input {
     max-height: 85vh;
     border-radius: 0.5rem;
     box-shadow: var(--shadow-2xl);
+}
+
+.lightbox__img--poster {
+    max-height: 92vh;
+    object-fit: contain;
 }
 
 .lightbox__btn {
